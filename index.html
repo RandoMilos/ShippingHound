@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Arrving Sun</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Registro de Guías</li>
+                <li>Estado General</li>
+            </ul>
+            <i><img src="img/logo-as.png" alt="Arriving Sun Logo"></i>
+            <ul>
+                <li>Lista de Guías</li>
+                <li>Buscar Guías</li>
+                <li>Historial de Guías</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="mainBanner">
+            <img class="mainBanner__image" src="img/banner.png" alt="banner Arriving sun">
+        </div>
+        <section class="mainTitle">
+            <div class="mainTitle__container">
+                <div class="mainTitle__text">
+                    <h1>Tus paquetes son nuestro compromiso, el excelente servicio nuestra prioridad</h1>
+                    <h2>Conoce nuestros servicios:</h2>
+                </div>
+                <div class="imageContainer">
+                    <img class="imageContainer__item" src="img/delivery-man.png" alt="owo">
+                </div>
+            </div>
+        </section>
+        <section class="mainContent">
+            <section>
+                <div class="mainItemsContainer">
+                    <div class="mainItem">
+                        <div class="mainItem__title"><p>Numero total de guias</p></div>
+                        <div class="mainItem__info"><p>384</p></div>
+                    </div>
+                    <div class="mainItem">
+                        <div class="mainItem__title"><p>Guias en transito</p></div>
+                        <div class="mainItem__info"><p>44</p></div>
+                    </div>
+                    <div class="mainItem">
+                        <div class="mainItem__title"><p>Guias entregadas</p></div>
+                        <div class="mainItem__info"><p>320</p></div>
+                    </div>
+                </div>
+            </section>
+            <section class="guideTable">
+                <table>
+                    <tr>
+                        <th>Número de Guías</th>
+                        <th>Estado Actual</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Fecha de la última actualización</th>
+                        <th>Actualizar</th>
+                    </tr>
+                    <tr>
+                        <td>32168</td>
+                        <td>En recoleccion</td>
+                        <td>Guadalajara</td>
+                        <td>CDMX</td>
+                        <td>15/04/25</td>
+                        <td><button>owo</button></td>
+                    </tr>
+                    <tr>    
+                        <td>32348</td>
+                        <td>En transito</td>
+                        <td>Denver</td>
+                        <td>Cancun</td>
+                        <td>16/04/25</td>
+                        <td><button>owo</button></td>
+                    </tr>
+                    <tr>
+                        <td>32343</td>
+                        <td>Entregada</td>
+                        <td>Silao</td>
+                        <td>Cd. Juarez</td>
+                        <td>14/04/25</td>
+                        <td><button>owo</button></td>
+                    </tr>
+                    <tr>
+                        <td>32488</td>
+                        <td>En preparacion</td>
+                        <td>Zapopan</td>
+                        <td>Tlajomulco</td>
+                        <td>16/04/25</td>
+                        <td><button>owo</button></td>
+                    </tr>
+                    <tr>
+                        <td>32343</td>
+                        <td>Entregada</td>
+                        <td>Cd. Valles</td>
+                        <td>Tehuacan</td>
+                        <td>16/04/25</td>
+                        <td><button>owo</button></td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <form>
+                    <fieldset>
+                        <legend></legend>
+                        <div id="packetNumber">
+                            <label for="guideNumber">Numero de Guia</label>
+                            <input type="number" id="guideNumber" name="guideNumberReceived" placeholder="Ingresa el numero de guia" title="Ingresa numero de guia" required>
+                        </div>
+                        <div id="packetFrom">
+                            <label for="guideFrom">Origen</label>
+                            <input type="text" id="guideFrom" name="guideFromReceived" placeholder="Ingresa el origen de tu paquete" title="Ingresa el origen del paquete" required>
+                        </div>
+                        <div id="packetTo">
+                            <label for="guideTo">Destino</label>
+                            <input type="text" id="guideTo" name="guideToReceived" placeholder="Ingresa el destino de tu paquete" title="Ingresa destino del paquete" required>
+                        </div>
+                        <div id="packetDate">
+                            <label for="guideDate">Fecha de Creacion</label>
+                            <input type="date" id="guideDate" name="guideDateReceived" required>
+                        </div>
+                        <div id="packetStatus">
+                            <label for="guideStatus">Estado de paquete</label>
+                            <select name="status" id="guideStatus" required>
+                                <option value="default">- Selecciona un Estado -</option>
+                                <option value="generada">Generada</option>
+                                <option value="preparacion">En preparacion</option>
+                                <option value="transito">En Transito</option>
+                                <option value="entregada">Entregada</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

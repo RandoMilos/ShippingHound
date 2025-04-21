@@ -1,0 +1,137 @@
+html {
+  font-family: "Onest", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #d7dfeb;
+  padding: 0;
+}
+
+header {
+  background-color: #054fb1;
+  color: #F2CB05;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+header img {
+  width: 7rem;
+  padding: 2rem;
+}
+header li {
+  list-style: none;
+  font-weight: 700;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: 0;
+  gap: 3rem;
+}
+
+main .mainBanner {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+main .mainTitle {
+  background-color: #054fb1;
+  margin: 0;
+}
+main .mainTitle__text {
+  color: #F2B705;
+}
+main .mainTitle__container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+main .mainTitle__container .imageContainer {
+  padding: 0;
+  height: auto;
+}
+main .mainTitle__container .imageContainer__item {
+  width: 15rem;
+  height: 100%;
+}
+main .mainContent {
+  padding: 0.5rem;
+}
+main .mainContent .guideTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: 3rem;
+}
+main .mainContent .guideTable table {
+  border-collapse: collapse;
+  text-align: center;
+}
+main .mainContent .guideTable td {
+  padding: 1rem;
+}
+main .mainContent .guideTable th {
+  background-color: #054fb1;
+  color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #35659c;
+}
+main .mainContent .guideTable tr:nth-child(odd) {
+  background-color: #fcefd2;
+}
+main .mainContent .guideTable tr:nth-child(even) {
+  background-color: #fcf5e8;
+}
+main .mainItemsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  gap: 2rem;
+}
+main .mainItemsContainer .mainItem {
+  width: 15%;
+}
+main .mainItemsContainer .mainItem__title {
+  background-color: #d87943;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+main .mainItemsContainer .mainItem__title p {
+  margin: 0;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+main .mainItemsContainer .mainItem__info {
+  background-color: #ffffff;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+main .mainItemsContainer .mainItem__info p {
+  margin: 0;
+  padding: 4rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+}/*# sourceMappingURL=main.css.map */
