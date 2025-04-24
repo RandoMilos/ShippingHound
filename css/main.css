@@ -99,6 +99,214 @@ main .mainContent .guideTable tr:nth-child(odd) {
 main .mainContent .guideTable tr:nth-child(even) {
   background-color: #fcf5e8;
 }
+main .mainContent .createGuide__form {
+  background-color: #c3d3eb;
+  border-radius: 0.3rem;
+}
+main .mainContent .createGuide__formBody {
+  border: none;
+}
+main .mainContent .createGuide__formBody .formBody__title {
+  font-weight: 700;
+  padding: 1rem;
+}
+main .mainContent .createGuide__formBody .formBody__title html {
+  font-family: "Onest", sans-serif;
+}
+main .mainContent .createGuide__formBody .formBody__title img {
+  width: 100%;
+}
+main .mainContent .createGuide__formBody .formBody__title body {
+  margin: 0;
+  background-color: #d7dfeb;
+  padding: 0;
+}
+main .mainContent .createGuide__formBody .formBody__title header {
+  background-color: #054fb1;
+  color: #F2CB05;
+}
+main .mainContent .createGuide__formBody .formBody__title header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+main .mainContent .createGuide__formBody .formBody__title header img {
+  width: 7rem;
+  padding: 2rem;
+}
+main .mainContent .createGuide__formBody .formBody__title header li {
+  list-style: none;
+  font-weight: 700;
+}
+main .mainContent .createGuide__formBody .formBody__title header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: 0;
+  gap: 3rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainBanner {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainTitle {
+  background-color: #054fb1;
+  margin: 0;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainTitle__text {
+  color: #F2B705;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainTitle__container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainTitle__container .imageContainer {
+  padding: 0;
+  height: auto;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainTitle__container .imageContainer__item {
+  width: 15rem;
+  height: 100%;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent {
+  padding: 0.5rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .guideTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: 3rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .guideTable table {
+  border-collapse: collapse;
+  text-align: center;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .guideTable td {
+  padding: 1rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .guideTable th {
+  background-color: #054fb1;
+  color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #35659c;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .guideTable tr:nth-child(odd) {
+  background-color: #fcefd2;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .guideTable tr:nth-child(even) {
+  background-color: #fcf5e8;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .createGuide__form {
+  background-color: #b0c1d8;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .createGuide__formBody {
+  border: none;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .createGuide__formBody .formBody__title {
+  font-weight: 700;
+  color: #ffffff;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .createGuide__formBody .formBody__inputContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .createGuide__formBody .formBody__inputLabel {
+  font-weight: 500;
+  padding: 1rem 0.8rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .createGuide__formBody .formBody__inputUser {
+  padding: 1rem;
+  width: 80%;
+  border: transparent;
+  border-radius: 0.5rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainContent .createGuide__formBody .formBody__submitButton {
+  width: 30%;
+  margin: 2rem 0rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #3729fd;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainItemsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: row;
+  gap: 2rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainItemsContainer .mainItem {
+  width: 15%;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainItemsContainer .mainItem__title {
+  background-color: #d87943;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainItemsContainer .mainItem__title p {
+  margin: 0;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainItemsContainer .mainItem__info {
+  background-color: #ffffff;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+main .mainContent .createGuide__formBody .formBody__title main .mainItemsContainer .mainItem__info p {
+  margin: 0;
+  padding: 4rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+main .mainContent .createGuide__formBody .formBody__inputContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+main .mainContent .createGuide__formBody .formBody__inputLabel {
+  font-weight: 500;
+  padding: 1rem 0.8rem;
+}
+main .mainContent .createGuide__formBody .formBody__inputUser {
+  padding: 1rem;
+  width: 80%;
+  border: transparent;
+  border-radius: 0.5rem;
+}
+main .mainContent .createGuide__formBody .formBody__submitButton {
+  width: 30%;
+  margin: 2rem 0rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #3729fd;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
 main .mainItemsContainer {
   display: flex;
   align-items: center;

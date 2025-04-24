@@ -44,7 +44,7 @@
             <section>
                 <div class="mainItemsContainer">
                     <div class="mainItem">
-                        <div class="mainItem__title"><p>Numero total de guias</p></div>
+                        <div class="mainItem__title"><p>Número total de guías</p></div>
                         <div class="mainItem__info"><p>384</p></div>
                     </div>
                     <div class="mainItem">
@@ -109,28 +109,28 @@
                     </tr>
                 </table>
             </section>
-            <section>
-                <form>
-                    <fieldset>
-                        <legend></legend>
-                        <div id="packetNumber">
-                            <label for="guideNumber">Numero de Guia</label>
-                            <input type="number" id="guideNumber" name="guideNumberReceived" placeholder="Ingresa el numero de guia" title="Ingresa numero de guia" required>
+            <section class="createGuide">
+                <form class="createGuide__form">
+                    <fieldset class="createGuide__formBody">
+                        <legend class="formBody__title">Crea tu guía</legend>
+                        <div class="formBody__inputContainer" id="packetNumber">
+                            <label class="formBody__inputLabel" for="guideNumber">Numero de Guia</label>
+                            <input class="formBody__inputUser" type="number" id="guideNumber" name="guideNumberReceived" placeholder="Ingresa el numero de guia" title="Ingresa numero de guia" required>
                         </div>
-                        <div id="packetFrom">
-                            <label for="guideFrom">Origen</label>
-                            <input type="text" id="guideFrom" name="guideFromReceived" placeholder="Ingresa el origen de tu paquete" title="Ingresa el origen del paquete" required>
+                        <div class="formBody__inputContainer id="packetFrom">
+                            <label class="formBody__inputLabel" for="guideFrom">Origen</label>
+                            <input class="formBody__inputUser" type="text" id="guideFrom" name="guideFromReceived" placeholder="Ingresa el origen de tu paquete" title="Ingresa el origen del paquete" required>
                         </div>
-                        <div id="packetTo">
-                            <label for="guideTo">Destino</label>
-                            <input type="text" id="guideTo" name="guideToReceived" placeholder="Ingresa el destino de tu paquete" title="Ingresa destino del paquete" required>
+                        <div class="formBody__inputContainer id="packetTo">
+                            <label class="formBody__inputLabel" for="guideTo">Destino</label>
+                            <input class="formBody__inputUser" type="text" id="guideTo" name="guideToReceived" placeholder="Ingresa el destino de tu paquete" title="Ingresa destino del paquete" required>
                         </div>
-                        <div id="packetDate">
-                            <label for="guideDate">Fecha de Creacion</label>
-                            <input type="date" id="guideDate" name="guideDateReceived" required>
+                        <div class="formBody__inputContainer id="packetDate">
+                            <label class="formBody__inputLabel" for="guideDate">Fecha de Creacion</label>
+                            <input class="formBody__inputUser" type="date" id="guideDate" name="guideDateReceived" required>
                         </div>
-                        <div id="packetStatus">
-                            <label for="guideStatus">Estado de paquete</label>
+                        <div class="formBody__inputContainer id="packetStatus">
+                            <label class="formBody__inputLabel" for="guideStatus">Estado de paquete</label>
                             <select name="status" id="guideStatus" required>
                                 <option value="default">- Selecciona un Estado -</option>
                                 <option value="generada">Generada</option>
@@ -140,7 +140,7 @@
                             </select>
                         </div>
                         <div>
-                            <input type="submit" value="Enviar">
+                            <input class="formBody__submitButton" type="submit" value="Enviar">
                         </div>
                     </fieldset>
                 </form>

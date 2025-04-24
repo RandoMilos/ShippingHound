@@ -97,11 +97,225 @@ main{
             tr:nth-child(odd) {
                 background-color: #fcefd2;
             }
-          
             tr:nth-child(even) {
                 background-color: #fcf5e8;
             }
         }
+        .createGuide{
+            &__form{
+                background-color: #c3d3eb;
+                border-radius: .3rem;
+            }
+            &__formBody{
+                border: none;
+                .formBody{
+                    &__title{
+                        font-weight: 700;
+                        padding: 1rem;$hhYellow: #F2CB05;
+                        $hhBlue: #054fb1;
+                        $hhDYellow: #F2B705;
+                        $hhPeach: #d87943;
+                        $hhRed: #BF2C1F;
+                        $bgColor: #d7dfeb;
+                        $mainFont: "Onest", sans-serif;
+                        $fontSize: 16px;
+                        
+                        @mixin setflex($ai: center, $jc: center, $fd: row){
+                            display: flex;
+                            align-items: $ai;
+                            justify-content: $jc;
+                            box-sizing: border-box;
+                            flex-direction: $fd;
+                        }
+                        
+                        html{
+                            font-family: $mainFont;
+                        }
+                        
+                        img{
+                            width: 100%;
+                        }
+                        
+                        body{
+                            margin: 0;
+                            background-color: $bgColor;
+                            padding: 0;
+                        }
+                        
+                        header{
+                            background-color: $hhBlue;
+                            color: $hhYellow;
+                            nav{
+                                @include setflex;
+                            }
+                            img{
+                                width: 7rem;
+                                padding: 2rem;
+                            }
+                            li{
+                                list-style: none;
+                                font-weight: 700;
+                            }
+                            ul{
+                                @include setflex;
+                                padding: 0;
+                                gap: 3rem;
+                            }
+                        }
+                        
+                        main{
+                            .mainBanner{
+                                padding: 0;
+                                margin: 0;
+                                height: 100%;
+                            }
+                            .mainTitle{
+                                background-color: #054fb1;
+                                margin: 0;
+                                &__text{
+                                    color: $hhDYellow;
+                                }
+                                &__container{
+                                    padding: 0;
+                                    @include setflex(center, space-around, row);
+                                    .imageContainer{
+                                        padding: 0;
+                                        height: auto;
+                                        &__item{
+                                            width: 15rem;
+                                            height: 100%;
+                                        }
+                        
+                                    }
+                                }
+                            }
+                            .mainContent{
+                                padding: .5rem;
+                                .guideTable{
+                                    @include setflex;
+                                    padding: 3rem;
+                                    table{
+                                        border-collapse: collapse;
+                                        text-align: center;  
+                                    }
+                                    td{
+                                        padding: 1rem;
+                                    }
+                                    th{
+                                        background-color: $hhBlue;
+                                        color: #ffffff;
+                                        padding: 1rem;
+                                        border: 1px solid #35659c;
+                                    }
+                                    tr:nth-child(odd) {
+                                        background-color: #fcefd2;
+                                    }
+                                    tr:nth-child(even) {
+                                        background-color: #fcf5e8;
+                                    }
+                                }
+                                .createGuide{
+                                    &__form{
+                                        background-color: #b0c1d8;
+                                    }
+                                    &__formBody{
+                                        border: none;
+                                        .formBody{
+                                            &__title{
+                                                font-weight: 700;
+                                                color: #ffffff;
+                                            }
+                                            &__inputContainer{
+                                                @include setflex(flex-start, flex-start, column);
+                                            }
+                                            &__inputLabel{
+                                                font-weight: 500;
+                                                padding: 1rem .8rem;
+                                            }
+                                            &__inputUser{
+                                                padding: 1rem;
+                                                width: 80%;
+                                                border: transparent;
+                                                border-radius: .5rem;
+                                            }
+                                            &__submitButton{
+                                                width: 30%;
+                                                margin: 2rem 0rem;
+                                                padding: 1rem;
+                                                border: none;
+                                                border-radius: .5rem;
+                                                background-color: #3729fd;
+                                                color: #ffffff;
+                                                font-size: 1.3rem;
+                                            }
+                                        }
+                                    }
+                                }
+                        
+                            }
+                            .mainItemsContainer{
+                                @include setflex(center, center, row);
+                                gap: 2rem;
+                                .mainItem{
+                                    width: 15%;
+                                    &__title{
+                                        background-color: $hhPeach;
+                                        border-top-left-radius: 1rem;
+                                        border-top-right-radius: 1rem;
+                                        p{
+                                            margin: 0;
+                                            padding: 1.5rem 0;
+                                            text-align: center;
+                                            font-weight: 800;
+                                            color: #ffffff;
+                                            font-size: 1.2rem;
+                        
+                                        }
+                                    }
+                                    &__info{
+                                        background-color: #ffffff;
+                                        border-bottom-left-radius: 1rem;
+                                        border-bottom-right-radius: 1rem;
+                                        p{
+                                            margin: 0;
+                                            padding: 4rem 0;
+                                            text-align: center;
+                                            font-size: 2.5rem;
+                                            font-weight: 800;
+                                        }
+                                    }
+                                }
+                            }
+                        
+                        }
+                    }
+                    &__inputContainer{
+                        @include setflex(flex-start, flex-start, column);
+                    }
+                    &__inputLabel{
+                        font-weight: 500;
+                        padding: 1rem .8rem;
+                    }
+                    &__inputUser{
+                        padding: 1rem;
+                        width: 80%;
+                        border: transparent;
+                        border-radius: .5rem;
+                    }
+                    &__submitButton{
+                        width: 30%;
+                        margin: 2rem 0rem;
+                        padding: 1rem;
+                        border: none;
+                        border-radius: .5rem;
+                        background-color: #3729fd;
+                        color: #ffffff;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+
     }
     .mainItemsContainer{
         @include setflex(center, center, row);
