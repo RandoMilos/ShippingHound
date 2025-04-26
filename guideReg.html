@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Hound Express | Registro de Guías</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="guideReg.html">Registro de Guías</a></li>
+                <li><a href="genStatus.html">Estado General</a></li>
+            </ul>
+            <i><a href="index.html"><img src="img/logoLB-HE.png" alt="Hound Express Logo"></a></i>
+            <ul>
+                <li><a href="guideList.html">Lista de Guías</a></li>
+                <li><a href="guideSearch.html">Buscar Guías</a></li>
+                <li><a href="guideHistory.html">Historial de Guías</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="mainBanner">
+            <img class="mainBanner__image" src="img/guideCreation-banner.png" alt="banner creacion de guias">
+        </div>
+        <section class="mainContent">
+            <section class="createGuide">
+                <form class="createGuide__form">
+                    <fieldset class="createGuide__formBody">
+                        <legend class="formBody__title">Crea tu guía</legend>
+                        <div class="formBody__inputContainer" id="packetNumber">
+                            <label class="formBody__inputLabel" for="guideNumber">Numero de Guia</label>
+                            <input class="formBody__inputUser" type="number" id="guideNumber" name="guideNumberReceived" placeholder="Ingresa el numero de guia" title="Ingresa numero de guia" required>
+                        </div>
+                        <div class="formBody__inputContainer" id="packetFrom">
+                            <label class="formBody__inputLabel" for="guideFrom">Origen</label>
+                            <input class="formBody__inputUser" type="text" id="guideFrom" name="guideFromReceived" placeholder="Ingresa el origen de tu paquete" title="Ingresa el origen del paquete" required>
+                        </div>
+                        <div class="formBody__inputContainer" id="packetTo">
+                            <label class="formBody__inputLabel" for="guideTo">Destino</label>
+                            <input class="formBody__inputUser" type="text" id="guideTo" name="guideToReceived" placeholder="Ingresa el destino de tu paquete" title="Ingresa destino del paquete" required>
+                        </div>
+                        <div class="formBody__inputContainer" id="packetDate">
+                            <label class="formBody__inputLabel" for="guideDate">Fecha de Creacion</label>
+                            <input class="formBody__inputUser" type="date" id="guideDate" name="guideDateReceived" required>
+                        </div>
+                        <div class="formBody__inputContainer" id="packetStatus">
+                            <label class="formBody__inputLabel" for="guideStatus">Estado de paquete</label>
+                            <select class="formBody__select" name="status" id="guideStatus" required>
+                                <option value="default">- Selecciona un Estado -</option>
+                                <option value="generada">Generada</option>
+                                <option value="preparacion">En preparacion</option>
+                                <option value="transito">En Transito</option>
+                                <option value="entregada">Entregada</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input class="formBody__submitButton" type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="socialNetworks">
+            <p>Nuestras redes sociales:</p>
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+            <a href="#">TikTok</a>
+            <a href="#">Facebook</a>
+        </div>
+        <p>2025 Todos los derechos reservados &copy;</p>
+        <div class="contactUs">
+            <a href="#">Contactanos</a>
+            <a href="#">Politicas de Privacidad</a>
+        </div>
+    </footer>
+</body>
+</html>
