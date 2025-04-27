@@ -1,5 +1,6 @@
 html {
   font-family: "Open Sans", sans-serif;
+  height: 100%;
 }
 
 img {
@@ -123,6 +124,7 @@ main .mainTitle__container .imageContainer__item {
 }
 main .mainContent {
   padding: 0.5rem;
+  margin-bottom: 8rem;
 }
 main .mainContent .mainItemsContainer {
   padding: 4rem 0;
@@ -143,7 +145,7 @@ main .mainContent .mainItemsContainer {
   }
 }
 main .mainContent .mainItemsContainer .mainItem {
-  width: 20%;
+  width: 15%;
 }
 @media (max-width: 1156px) {
   main .mainContent .mainItemsContainer .mainItem {
@@ -359,6 +361,11 @@ main .mainContent .searchContainer {
   flex-direction: column;
   gap: 3rem;
 }
+@media (max-width: 1156px) {
+  main .mainContent .searchContainer {
+    padding-bottom: 10rem;
+  }
+}
 main .mainContent .searchContainer .searchInput {
   background-color: white;
   background-image: url("../img/search.svg");
@@ -397,7 +404,8 @@ main .mainContent .guideHistoryContainer .guideETA {
 
 footer {
   background-color: #6AC6DE;
-  padding: 3rem 1.7rem;
+  padding: 3rem 1.7rem 5rem 1.7rem;
+  margin: 0;
   color: #091E3F;
   font-weight: 600;
   display: flex;
