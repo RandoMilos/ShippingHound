@@ -1,0 +1,33 @@
+@mixin setflex($ai: center, $jc: center, $fd: row){
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    box-sizing: border-box;
+    flex-direction: $fd;
+}
+
+@mixin respontTo($bp){
+    @if $bp == 'laptop'{
+        @media (max-width: 1156px){
+            @content;
+        }
+    }@else if $bp == 'Bigtablet'{
+        @media (max-width:860px){
+            @content;
+        }
+    }@else if $bp == 'tablet'{
+        @media (max-width:665px){
+            @content;
+        }
+    }@else if $bp == 'mobile'{
+        @media (max-width: 480px){
+            @content;
+        }
+    }@else if $bp == 'desktop'{
+        @media (min-width: 1025px){
+            @content;
+        }
+    }@else {
+        @warn "No se ha definido el breakpoint para el mixin";
+    }
+}

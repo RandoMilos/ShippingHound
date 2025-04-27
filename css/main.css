@@ -1,5 +1,6 @@
 html {
   font-family: "Open Sans", sans-serif;
+  height: 100%;
 }
 
 img {
@@ -24,6 +25,21 @@ header nav {
   box-sizing: border-box;
   flex-direction: row;
 }
+@media (max-width: 665px) {
+  header nav {
+    display: flex;
+    align-items: space-around;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-direction: row;
+  }
+}
+@media (max-width: 1156px) {
+  header nav {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
 header img {
   width: 7rem;
   padding: 2rem;
@@ -31,6 +47,17 @@ header img {
 header li {
   list-style: none;
   font-weight: 700;
+}
+@media (max-width: 1156px) {
+  header li {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 665px) {
+  header li {
+    display: none;
+  }
 }
 header li a {
   text-decoration: none;
@@ -45,11 +72,26 @@ header ul {
   padding: 0;
   gap: 3rem;
 }
+header .menuIcon {
+  display: none;
+}
+@media (max-width: 665px) {
+  header .menuIcon {
+    display: block;
+    width: 2rem;
+    color: #F0A956;
+  }
+}
 
 main .mainBanner {
   padding-top: 6rem;
   margin: 0;
   height: 100%;
+}
+@media (max-width: 1156px) {
+  main .mainBanner {
+    padding-top: 8rem;
+  }
 }
 main .mainTitle {
   background-color: #05142e;
@@ -57,6 +99,12 @@ main .mainTitle {
 }
 main .mainTitle__text {
   color: #ebebeb;
+}
+@media (max-width: 1156px) {
+  main .mainTitle__text {
+    font-size: 0.7rem;
+    padding: 0 1rem;
+  }
 }
 main .mainTitle__container {
   padding: 0;
@@ -76,6 +124,7 @@ main .mainTitle__container .imageContainer__item {
 }
 main .mainContent {
   padding: 0.5rem;
+  margin-bottom: 8rem;
 }
 main .mainContent .mainItemsContainer {
   padding: 4rem 0;
@@ -86,8 +135,32 @@ main .mainContent .mainItemsContainer {
   flex-direction: row;
   gap: 2rem;
 }
+@media (max-width: 860px) {
+  main .mainContent .mainItemsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+}
 main .mainContent .mainItemsContainer .mainItem {
   width: 15%;
+}
+@media (max-width: 1156px) {
+  main .mainContent .mainItemsContainer .mainItem {
+    width: 30%;
+  }
+}
+@media (max-width: 860px) {
+  main .mainContent .mainItemsContainer .mainItem {
+    width: 40%;
+  }
+}
+@media (max-width: 665px) {
+  main .mainContent .mainItemsContainer .mainItem {
+    width: 80%;
+  }
 }
 main .mainContent .mainItemsContainer .mainItem__title {
   background-color: #F0A956;
@@ -100,7 +173,12 @@ main .mainContent .mainItemsContainer .mainItem__title p {
   text-align: center;
   font-weight: 800;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+@media (max-width: 1156px) {
+  main .mainContent .mainItemsContainer .mainItem__title p {
+    font-size: 1rem;
+  }
 }
 main .mainContent .mainItemsContainer .mainItem__info {
   background-color: #ffffff;
@@ -115,7 +193,7 @@ main .mainContent .mainItemsContainer .mainItem__info p {
   font-weight: 800;
 }
 main .mainContent .homeInfo {
-  background-image: linear-gradient(to right, rgb(235, 235, 235), rgb(235, 235, 235), rgb(235, 235, 235), rgb(121, 123, 253));
+  background-image: linear-gradient(to right, rgb(235, 235, 235), rgb(235, 235, 235), rgb(235, 235, 235), rgb(192, 194, 250));
   padding: 0;
   margin: 1rem;
   border-radius: 0.5rem;
@@ -137,6 +215,11 @@ main .mainContent .homeInfo__flexContainer img {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
+@media (max-width: 665px) {
+  main .mainContent .homeInfo__flexContainer img {
+    display: none;
+  }
+}
 main .mainContent .homeInfo__textContainer {
   padding: 1.5rem;
 }
@@ -145,6 +228,15 @@ main .mainContent .homeInfo__textContainer h3 {
 }
 main .mainContent .homeInfo__textContainer p {
   font-size: 1.2rem;
+}
+@media (max-width: 860px) {
+  main .mainContent .homeInfo__textContainer p {
+    font-size: 0.85rem;
+  }
+  main .mainContent .homeInfo__textContainer h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
 }
 main .mainContent .guideTable {
   display: flex;
@@ -161,11 +253,35 @@ main .mainContent .guideTable table {
 main .mainContent .guideTable td {
   padding: 1rem;
 }
+@media (max-width: 860px) {
+  main .mainContent .guideTable td {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 665px) {
+  main .mainContent .guideTable td {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+  }
+}
 main .mainContent .guideTable th {
   background-color: #091E3F;
   color: #ffffff;
   padding: 1rem;
   border: 1px solid #35659c;
+}
+@media (max-width: 860px) {
+  main .mainContent .guideTable th {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 665px) {
+  main .mainContent .guideTable th {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+  }
 }
 main .mainContent .guideTable tr:nth-child(odd) {
   background-color: #fcefd2;
@@ -178,7 +294,18 @@ main .mainContent .guideTable button {
   background-color: #5D66E8;
   color: #ffffff;
   padding: 0.3rem;
-  border-radius: 0.3 rem;
+  border-radius: 0.3rem;
+}
+@media (max-width: 665px) {
+  main .mainContent .guideTable button {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 665px) {
+  main .mainContent .guideTable .selectEstado {
+    font-size: 0.5rem;
+    width: 90%;
+  }
 }
 main .mainContent .createGuide__form {
   background-color: #c3d3eb;
@@ -234,6 +361,11 @@ main .mainContent .searchContainer {
   flex-direction: column;
   gap: 3rem;
 }
+@media (max-width: 1156px) {
+  main .mainContent .searchContainer {
+    padding-bottom: 10rem;
+  }
+}
 main .mainContent .searchContainer .searchInput {
   background-color: white;
   background-image: url("../img/search.svg");
@@ -246,6 +378,11 @@ main .mainContent .searchContainer .searchInput {
   padding-bottom: 1rem;
   border-radius: 2.5rem;
   margin-bottom: 10rem;
+}
+@media (max-width: 860px) {
+  main .mainContent .searchContainer .searchInput {
+    width: 80%;
+  }
 }
 main .mainContent .guideHistoryContainer {
   background-color: #ffffff;
@@ -267,7 +404,8 @@ main .mainContent .guideHistoryContainer .guideETA {
 
 footer {
   background-color: #6AC6DE;
-  padding: 3rem 1.7rem;
+  padding: 3rem 1.7rem 5rem 1.7rem;
+  margin: 0;
   color: #091E3F;
   font-weight: 600;
   display: flex;
@@ -275,6 +413,21 @@ footer {
   justify-content: space-around;
   box-sizing: border-box;
   flex-direction: row;
+}
+@media (max-width: 665px) {
+  footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (max-width: 1156px) {
+  footer {
+    font-size: 0.8rem;
+  }
 }
 footer .socialNetworks {
   display: flex;
