@@ -1,19 +1,6 @@
-$hhPeach: #F0A956;
-$hhNightBlue:  #091E3F;
-$hhLightBlue:  #6AC6DE;
-$hhMidBlue: #5D66E8;
-$hhRed: #BF2C1F;
-$bgColor: #d7dfeb;
-$mainFont: 'Open Sans', sans-serif;
-$fontSize: 16px;
+@import "mixins.scss";
+@import "variables.scss";
 
-@mixin setflex($ai: center, $jc: center, $fd: row){
-    display: flex;
-    align-items: $ai;
-    justify-content: $jc;
-    box-sizing: border-box;
-    flex-direction: $fd;
-}
 
 html{
     font-family: $mainFont;
@@ -35,12 +22,26 @@ header{
     background-color: $hhNightBlue;
     nav{
         @include setflex;
+        @include respontTo(tablet){
+            @include setflex(space-around, space-around, row);
+        }
+        @include respontTo(laptop){
+            gap: .5rem;
+            padding: 1rem;
+        };
     }
     img{
         width: 7rem;
         padding: 2rem;
     }
     li{
+        @include respontTo(laptop){
+            font-weight: 600;
+            font-size: .8rem;
+        };
+        @include respontTo(tablet){
+            display: none;
+        }
         list-style: none;
         font-weight: 700;
         a{
@@ -53,6 +54,14 @@ header{
         padding: 0;
         gap: 3rem;
     }
+    .menuIcon{
+        display: none;
+        @include respontTo(tablet){
+            display: block;
+            width: 2rem;
+            color: $hhPeach;
+        };
+    }
 }
 
 main{
@@ -60,12 +69,19 @@ main{
         padding-top: 6rem;
         margin: 0;
         height: 100%;
+        @include respontTo(laptop){
+            padding-top: 8rem;
+        };
     }
     .mainTitle{ //Titulo principal de la pagina
         background-color: #05142e;
         margin: 0;
         &__text{
             color: #ebebeb;
+            @include respontTo(laptop){
+                font-size: .7rem;
+                padding: 0 1rem;
+            };
         }
         &__container{
             padding: 0;
@@ -86,9 +102,21 @@ main{
         .mainItemsContainer{ //Contenedor de los items de la sección de Estado general
             padding: 4rem 0;
             @include setflex(center, center, row);
+            @include respontTo(Bigtablet){
+                @include setflex(center, center, column);
+            };
             gap: 2rem;
             .mainItem{
-                width: 15%;
+                width: 20%;
+                @include respontTo(laptop){
+                    width: 30%;
+                };
+                @include respontTo(Bigtablet){
+                    width: 40%;
+                };
+                @include respontTo(tablet){
+                    width: 80%;
+                };
                 &__title{
                     background-color: $hhPeach;
                     border-top-left-radius: 1rem;
@@ -99,7 +127,10 @@ main{
                         text-align: center;
                         font-weight: 800;
                         color: #ffffff;
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
+                        @include respontTo(laptop){
+                            font-size: 1rem;
+                        };
                     }
                 }
                 &__info{
@@ -117,7 +148,7 @@ main{
             }
         }
         .homeInfo{ //Seccion de informacion sobre nosotros
-            background-image: linear-gradient(to right, rgb(235, 235, 235),rgb(235, 235, 235),rgb(235, 235, 235), rgb(121, 123, 253));
+            background-image: linear-gradient(to right, rgb(235, 235, 235),rgb(235, 235, 235),rgb(235, 235, 235), rgb(192, 194, 250));
             padding: 0;
             margin: 1rem;
             border-radius: .5rem;
@@ -132,6 +163,9 @@ main{
                     width: 300px;
                     border-top-right-radius: .5rem;
                     border-bottom-right-radius: .5rem;
+                    @include respontTo(tablet){
+                        display: none;
+                    };
                 }
             }
             &__textContainer{
@@ -141,6 +175,15 @@ main{
                 }
                 p{
                     font-size: 1.2rem;
+                }
+                @include respontTo(Bigtablet){
+                    p{
+                        font-size: .85rem;
+                    }
+                    h3{
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                    }
                 }
             }
         }
@@ -153,12 +196,28 @@ main{
             }
             td{
                 padding: 1rem;
+                @include respontTo(Bigtablet){
+                    font-size: .8rem;
+                    padding: .5rem;
+                };
+                @include respontTo(tablet){
+                    font-size: .7rem;
+                    padding: .3rem;
+                };
             }
             th{
                 background-color: $hhNightBlue;
                 color: #ffffff;
                 padding: 1rem;
                 border: 1px solid #35659c;
+                @include respontTo(Bigtablet){
+                    font-size: .8rem;
+                    padding: .5rem;
+                };
+                @include respontTo(tablet){
+                    font-size: .7rem;
+                    padding: .3rem;
+                };
             }
             tr:nth-child(odd) {
                 background-color: #fcefd2;
@@ -171,7 +230,16 @@ main{
                 background-color: $hhMidBlue;
                 color: #ffffff;
                 padding: .3rem;
-                border-radius: .3   rem;
+                border-radius: .3rem;
+                @include respontTo(tablet){
+                    font-size: .7rem;
+                };
+            }
+            .selectEstado{
+                @include respontTo(tablet){
+                    font-size: .5rem;
+                    width: 90%;
+                };
             }
         }
         .createGuide{ //Seccion de Forumulario de creacion de guia
@@ -235,6 +303,9 @@ main{
                 padding-bottom: 1rem;
                 border-radius: 2.5rem;
                 margin-bottom: 10rem;
+                @include respontTo(Bigtablet){
+                    width: 80%;
+                };
             }
         }
         .guideHistoryContainer{
@@ -263,6 +334,13 @@ footer{
     color: $hhNightBlue;
     font-weight: 600;
     @include setflex(flex-start, space-around, row);
+    @include respontTo(tablet){
+        @include setflex(flex-start, center, column);
+        gap: 2rem;
+    }
+    @include respontTo(laptop){
+        font-size: .8rem;
+    }
     .socialNetworks{
         @include setflex(flex-start, center, column);
         gap: 1rem;
