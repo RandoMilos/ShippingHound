@@ -13,7 +13,9 @@
 <body>
     <header>
         <nav>
-            <i><img class="menuIcon" src="img/menu.svg" alt="Icono menu"></i>
+            <button class="menuIcon" style="background: none; border: none; cursor: pointer;">
+                <img src="img/menu.svg" alt="Icono menú">
+            </button>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="guideReg.html">Registro de Guías</a></li>
@@ -28,6 +30,20 @@
         </nav>
     </header>
     <main>
+        <section class="mobileMenu despegableMenu--active">
+            <div class="titleContainer">
+                <h2>Menú</h2>
+                <i class="closeIcon"><img src="img/chevrons-left.svg" alt="Icono cerrar"></i>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="guideReg.html">Registro de Guías</a></li>
+                <li><a href="genStatus.html">Estado General</a></li>
+                <li><a href="guideList.html">Lista de Guías</a></li>
+                <li><a href="guideSearch.html">Buscar Guías</a></li>
+                <li><a href="guideHistory.html">Historial de Guías</a></li>
+            </ul>
+        </section>
         <div class="mainBanner">
             <img class="mainBanner__image" src="img/guideStatus-banner.png" alt="banner Arriving sun">
         </div>

@@ -138,4 +138,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    const menuButton = document.querySelector('.menuIcon');
+    const mobileMenu = document.querySelector('.mobileMenu');
+    const closeButton = document.querySelector('.closeIcon');
+    
+    if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('menu-open');
+        });
+    }
+    
+    if (closeButton && mobileMenu) {
+        closeButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('menu-open');
+        });
+    }
+    
 });    
