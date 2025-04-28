@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js" defer></script>
     <title>Hound Express | Registro de Guías</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
         </div>
         <section class="mainContent">
             <section class="createGuide">
-                <form class="createGuide__form">
+                <form class="createGuide__form" id="createGuideForm">
                     <fieldset class="createGuide__formBody">
                         <legend class="formBody__title">Crea tu guía</legend>
                         <div class="formBody__inputContainer" id="packetNumber">
@@ -56,9 +57,10 @@
                             <select class="formBody__select" name="status" id="guideStatus" required>
                                 <option value="default">- Selecciona un Estado -</option>
                                 <option value="generada">Generada</option>
-                                <option value="preparacion">En preparacion</option>
-                                <option value="transito">En Transito</option>
-                                <option value="entregada">Entregada</option>
+                                <option value="En Recolección">En Recolección</option>
+                                <option value="En preparación">En preparación</option>
+                                <option value="En tránsito">En tránsito</option>
+                                <option value="Entregada">Entregada</option>
                             </select>
                         </div>
                         <div>

@@ -352,6 +352,7 @@ main .mainContent .createGuide__formBody .formBody__submitButton {
   background-color: #3729fd;
   color: #ffffff;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 main .mainContent .searchContainer {
   display: flex;

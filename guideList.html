@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js" defer></script>
     <title>Hound Express | Lista de Guias</title>
 </head>
 <body>
@@ -32,117 +33,20 @@
         </div>
         <section class="mainContent">
             <section class="guideTable">
-                <table>
-                    <tr>
-                        <th>Número de Guías</th>
-                        <th>Estado Actual</th>
-                        <th>Origen</th>
-                        <th>Destino</th>
-                        <th>Fecha de la última actualización</th>
-                        <th>Actualizar</th>
-                        <th>Historial</th>
-                    </tr>
-            
-                    <tr>
-                        <td>32168</td>
-                        <td>En recolección</td>
-                        <td>Guadalajara</td>
-                        <td>CDMX</td>
-                        <td>15/04/25</td>
-                        <td>
-                            <form>
-                                <select name="estado" class="selectEstado">
-                                    <option>En recolección</option>
-                                    <option>En tránsito</option>
-                                    <option>En preparación</option>
-                                    <option>Entregada</option>
-                                </select>
-                                <button type="submit">Actualizar</button>
-                            </form>
-                        </td>
-                        <td><button>Ver historial</button></td>
-                    </tr>
-            
-                    <tr>
-                        <td>32348</td>
-                        <td>En tránsito</td>
-                        <td>Denver</td>
-                        <td>Cancún</td>
-                        <td>16/04/25</td>
-                        <td>
-                            <form>
-                                <select name="estado" class="selectEstado">
-                                    <option>En recolección</option>
-                                    <option selected>En tránsito</option>
-                                    <option>En preparación</option>
-                                    <option>Entregada</option>
-                                </select>
-                                <button type="submit">Actualizar</button>
-                            </form>
-                        </td>
-                        <td><button>Ver historial</button></td>
-                    </tr>
-            
-                    <tr>
-                        <td>32343</td>
-                        <td>Entregada</td>
-                        <td>Silao</td>
-                        <td>Cd. Juárez</td>
-                        <td>14/04/25</td>
-                        <td>
-                            <form>
-                                <select name="estado" class="selectEstado">
-                                    <option>En recolección</option>
-                                    <option>En tránsito</option>
-                                    <option>En preparación</option>
-                                    <option>Entregada</option>
-                                </select>
-                                <button type="submit">Actualizar</button>
-                            </form>
-                        </td>
-                        <td><button>Ver historial</button></td>
-                    </tr>
-            
-                    <tr>
-                        <td>32488</td>
-                        <td>En preparación</td>
-                        <td>Zapopan</td>
-                        <td>Tlajomulco</td>
-                        <td>16/04/25</td>
-                        <td>
-                            <form>
-                                <select name="estado" class="selectEstado">
-                                    <option>En recolección</option>
-                                    <option>En tránsito</option>
-                                    <option selected>En preparación</option>
-                                    <option>Entregada</option>
-                                </select>
-                                <button type="submit">Actualizar</button>
-                            </form>
-                        </td>
-                        <td><button>Ver historial</button></td>
-                    </tr>
-            
-                    <tr>
-                        <td>32343</td>
-                        <td>Entregada</td>
-                        <td>Cd. Valles</td>
-                        <td>Tehuacán</td>
-                        <td>16/04/25</td>
-                        <td>
-                            <form>
-                                <select name="estado" class="selectEstado">
-                                    <option>En recolección</option>
-                                    <option>En tránsito</option>
-                                    <option>En preparación</option>
-                                    <option selected>Entregada</option>
-                                </select>
-                                <button type="submit">Actualizar</button>
-                            </form>
-                        </td>
-                        <td><button>Ver historial</button></td>
-                    </tr>
-            
+                <table id="packetTable">
+                    <thead>
+                        <tr>
+                            <th>Número de Guías</th>
+                            <th>Estado Actual</th>
+                            <th>Origen</th>
+                            <th>Destino</th>
+                            <th>Fecha de la última actualización</th>
+                            <th>Actualizar</th>
+                            <th>Historial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
                 </table>
             </section>
             
