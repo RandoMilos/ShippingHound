@@ -7,13 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js" defer></script>
     <title>Hound Express | Registro de Guías</title>
 </head>
 <body>
     <header>
         <nav>
+            <button class="menuIcon" style="background: none; border: none; cursor: pointer;">
+                <img src="img/menu.svg" alt="Icono menú">
+            </button>
             <ul>
-                <i><img class="menuIcon" src="img/menu.svg" alt="Icono menu"></i>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="guideReg.html">Registro de Guías</a></li>
                 <li><a href="genStatus.html">Estado General</a></li>
@@ -27,12 +30,26 @@
         </nav>
     </header>
     <main>
+        <section class="mobileMenu despegableMenu--active">
+            <div class="titleContainer">
+                <h2>Menú</h2>
+                <i class="closeIcon"><img src="img/chevrons-left.svg" alt="Icono cerrar"></i>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="guideReg.html">Registro de Guías</a></li>
+                <li><a href="genStatus.html">Estado General</a></li>
+                <li><a href="guideList.html">Lista de Guías</a></li>
+                <li><a href="guideSearch.html">Buscar Guías</a></li>
+                <li><a href="guideHistory.html">Historial de Guías</a></li>
+            </ul>
+        </section>
         <div class="mainBanner">
             <img class="mainBanner__image" src="img/guideCreation-banner.png" alt="banner creacion de guias">
         </div>
         <section class="mainContent">
             <section class="createGuide">
-                <form class="createGuide__form">
+                <form class="createGuide__form" id="createGuideForm">
                     <fieldset class="createGuide__formBody">
                         <legend class="formBody__title">Crea tu guía</legend>
                         <div class="formBody__inputContainer" id="packetNumber">
@@ -56,9 +73,10 @@
                             <select class="formBody__select" name="status" id="guideStatus" required>
                                 <option value="default">- Selecciona un Estado -</option>
                                 <option value="generada">Generada</option>
-                                <option value="preparacion">En preparacion</option>
-                                <option value="transito">En Transito</option>
-                                <option value="entregada">Entregada</option>
+                                <option value="En Recolección">En Recolección</option>
+                                <option value="En preparación">En preparación</option>
+                                <option value="En tránsito">En tránsito</option>
+                                <option value="Entregada">Entregada</option>
                             </select>
                         </div>
                         <div>

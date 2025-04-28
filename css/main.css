@@ -73,16 +73,71 @@ header ul {
   gap: 3rem;
 }
 header .menuIcon {
+  cursor: pointer;
   display: none;
+}
+header .menuIcon img {
+  width: 2rem;
 }
 @media (max-width: 665px) {
   header .menuIcon {
     display: block;
-    width: 2rem;
     color: #F0A956;
   }
 }
 
+main .mobileMenu {
+  left: -100%;
+  transition: left 0.3s ease-in-out;
+}
+main .mobileMenu.menu-open {
+  left: 0;
+}
+main .despegableMenu--hidden {
+  left: -100%;
+}
+main .despegableMenu--active {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 90%;
+  height: 100%;
+  background-color: #05142e;
+  z-index: 1;
+}
+main .despegableMenu--active .closeIcon {
+  width: 3rem;
+  cursor: pointer;
+}
+main .despegableMenu--active .titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 1rem;
+}
+main .despegableMenu--active .titleContainer h2 {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+main .despegableMenu--active li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 3rem;
+  list-style: none;
+  font-weight: 700;
+}
+main .despegableMenu--active li a {
+  text-decoration: none;
+  color: #F0A956;
+  font-size: 1.2rem;
+  padding: 0.9rem 0;
+}
 main .mainBanner {
   padding-top: 6rem;
   margin: 0;
@@ -352,6 +407,7 @@ main .mainContent .createGuide__formBody .formBody__submitButton {
   background-color: #3729fd;
   color: #ffffff;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 main .mainContent .searchContainer {
   display: flex;
